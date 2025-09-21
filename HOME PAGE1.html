@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> JHARKHAND WEBSITE </title>
+	 	 <link rel="stylesheet" href="Home Page.css"/>
+		 	 <script src="rough.js" ></script>
+			 <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+		
+
+  </head>
+  
+    <body>
+        <header> 
+         <!--logo and site name--!>
+         <div class="logo-section">
+		    <div class="logo"><img src="logo6.png"></div>
+			<div class="website">JharkhandVerse</div>
+		  </div>
+		  <!--top nav bar--!>
+		  <nav class="nav-menu">
+		  <a href="#welcome">HOME</a>
+		   <a href="#about">ABOUT</a>
+		    <a href="#contact-us">CONTACT US</a>
+			 <a href="login.html">LOGIN/SIGNUP</a>
+			 </nav>
+			       <!-- GTranslate widget dropdown appears here -->
+      <div class="gtranslate_wrapper"></div>
+
+			 
+			 <!-- Sidebar/Menu Toggle Button -->
+<button class="menu-btn" id="sidebarBtn" onclick="toggleMenu()">☰</button>
+
+        </header>
+
+		  <div class="menu-container">
+        
+
+        <ul class="dropdown-menu">
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Cultural & Heritage
+						
+                    </div>
+                    
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Cultural & Heritage', 'Dance')"><a href="dance.html">Dance</a></div>
+                    <div class="submenu-item" onclick="selectItem('Cultural & Heritage', 'Food')"><a href="food.html">Food</a></div>
+                    <div class="submenu-item" onclick="selectItem('Cultural & Heritage', 'Places')"><a href="culture.html">Places</a></div>
+                    <div class="submenu-item" onclick="selectItem('Cultural & Heritage', 'Handicraft')"><a href="handicraft.html">Handicraft</a></div>
+                    <div class="submenu-item" onclick="selectItem('Cultural & Heritage', 'Other Accessories')"><a href="acessories.html">Other Accessories</a></div>
+                </div>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                      Eco Tourism
+                    </div>
+                   
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Eco Tourism', 'Places')"><a href="ecotourism.html">Places</a></div>
+                    <div class="submenu-item" onclick="selectItem('Eco Tourism', 'Adventural Activities')"><a href="adventure.html">Adventural Activities</a></div>
+                </div>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Events and Festivals
+                    </div>
+              
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Events and Festivals', 'Upcoming Fest')"><a href="festival calender.html">Upcoming Fest</a></div>
+                </div>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Blog Pages
+                    </div>
+                   
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Blog Pages', 'Posts')"><a href="">Posts</a></div>
+                    <div class="submenu-item" onclick="selectItem('Blog Pages', 'Blog')"><a href="">Blog</a></div>
+                </div>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                          
+                        Trip Planner
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Trip Planner', 'Hotels')"><a href="hotel.html">Hotels</a></div>
+                    <div class="submenu-item" onclick="selectItem('Trip Planner', 'Online Booking')"><a href="onlinebooking.html">Online Booking</a></div>
+                    <div class="submenu-item" onclick="selectItem('Trip Planner', 'Plan Customization')"><a href="plancustomizer.html">Plan Customization</a></div>
+                </div>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                      
+                        Transportation
+                    </div>
+                   
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Transportation', 'Map')"><a href="mapoffline.html">Map</a></div>
+                    <div class="submenu-item" onclick="selectItem('Transportation', 'Navigator')"><a href="aispeech.html">Navigator</a></div>
+                </div>
+            </li>
+
+<li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Healthcare & Emergency
+                    </div>
+              
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Healthcare & Emergency')"><a href="health.html">Healthcare & Emergency</a></div>
+                </div>
+            </li>
+			<li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Tourism Guide
+                    </div>
+              
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Tourism Guide')"><a href="">Tourism Guide</a></div>
+                </div>
+            </li>
+<li class="menu-item">
+                <div class="menu-link" onclick="toggleSubmenu(this)">
+                    <div style="display: flex; align-items: center;">
+                        
+                        Feedback & Reviews
+                    </div>
+              
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item" onclick="selectItem('Feedback & Reviews')"><a href="feedback.html">Feedback & Reviews</a></div>
+                </div>
+            </li>
+        </ul>
+      
+    </div>
+			        <main class="content">
+        <div id="welcome">
+            <div class="slide-image slide1 active"><img src="welcome1.jpg"></div>
+            <div class="slide-image slide2"><img src="wel3.jpg"></div>
+            <div class="slide-image slide3"><img src="wel5.jpg"></div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slider-btn prev-btn" onclick="previousSlide()">&#8249;</button>
+            <button class="slider-btn next-btn" onclick="nextSlide()">&#8250;</button>
+            
+            <!-- Slide Indicators -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+            
+            
+        </div>
+<p class="welcome-text">Step into Jharkhand – "A Journey Through Nature's Wonders and Tribal Traditions."</p>
+					     <div id="about">
+		 <div class="about-box">
+            <div class="about-image">
+			</div>
+		<div class="about-text">
+            <p>
+                Jharkhand, 'the land of forests', is a state in eastern India. The state shares its border with the states of West Bengal to the east, Chhattisgarh to the west, Uttar Pradesh to the northwest, Bihar to the north and Odisha to the south. It is the 15th largest state by area, and the 14th largest by population. Hindi is the official language of the state. The city of Ranchi is its capital and Dumka its sub-capital. The state is known for its waterfalls, hills and holy places; Baidyanath Dham, Parasnath, Dewri and Rajrappa are major religious sites. Jharkhand is primarily rural, with about 24% of its population living in cities as of 2011. Jharkhand suffers from what is sometimes termed a resource curse: it accounts for more than 40% of India's mineral production but 39.1% of its population is below the poverty line and 19.6% of children under five years of age are malnourished.
+            </p>
+			</div>
+			</div>
+			</div>
+			<div id="contact-us">
+    <div class="contact-box"> <!-- Reuse About Us class for same styling -->
+        <div class="contact-image">
+            <!-- Optional: image or icon -->
+        </div>
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>If you have any queries, suggestions, or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li><strong>Phone:</strong> +91-1234567890</li>
+                <li><strong>Email:</strong> contact@jharkhandverse.com</li>
+                <li><strong>Address:</strong> Directorate of Tourism, MDI Building, 3rd Floor, Dhurwa, Ranchi-834004</li>
+            </ul>
+            <p>We are available Monday to Saturday, 10:00 HRS to 18:00 HRS.</p>
+        </div>
+    </div>
+</div>
+    </main>
+	<footer class="footer">
+    <div class="footer-overlay">
+      <div class="footer-container">
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#">Policy and Rules</a></li>
+            <li><a href="#">Complain</a></li>
+            <li><a href="#">RTI</a></li>
+            <li><a href="#">TIC</a></li>
+            <li><a href="#">Tender</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="footer-section">
+          <h3>&nbsp;</h3> <!-- Empty to align with Quick Links -->
+          <ul>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Notice & Circular</a></li>
+            <li><a href="#">Useful Link</a></li>
+            <li><a href="#">e-Services</a></li>
+            <li><a href="#">Tourist Guide</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">e-Magazine</a></li>
+            <li><a href="#">Sales Agent Affiliation</a></li>
+            <li><a href="#">Unit Registration</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section contact">
+          <h3>GET IN TOUCH</h3>
+          <p>(MONDAY TO SATURDAY 10:00 HRS TO 18:00 HRS)</p>
+          <p><strong>Directorate of Tourism</strong><br>
+            MDI Building, 3rd Floor, Dhurwa, Ranchi-834004<br>
+            📧 dirjharkhandtourism@gmail.com
+          </p>
+          <p><strong>Department of Tourism</strong><br>
+            FFP Building, 2nd Floor, Dhurwa, Ranchi-834004
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+	</div>
+	
+        <footer>	
+           <!--footer section--!>
+        </footer>		   
+    </body>
+</html>
